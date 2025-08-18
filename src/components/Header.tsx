@@ -33,10 +33,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">S</span>
-            </div>
-            <span className="text-xl font-bold text-foreground">Loja Santos</span>
+            <img 
+              src="/lovable-uploads/c21a5667-8200-4e39-9353-93deaadfbafc.png" 
+              alt="Loja Santos - Moda com história, feita com amor"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
