@@ -72,7 +72,8 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Endereço</h4>
-                      <p className="text-muted-foreground">Rua São José, 346</p>
+                      <p className="text-muted-foreground">R. São José, 346 - Centro</p>
+                      <p className="text-muted-foreground">Passo do Sobrado - RS, 96685-000</p>
                       <a 
                         href="https://share.google/PjLLlGDAvemn3qzQa" 
                         target="_blank" 
@@ -161,18 +162,19 @@ export const Contact = () => {
               <CardContent>
                 <div className="aspect-video rounded-lg overflow-hidden bg-purple-50">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.2345678901234!2d-51.123456789!3d-30.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA3JzI0LjQiUyA1McKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.123456789!2d-51.609722!3d-29.6908889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95193b3f4b5a1111%3A0x222222222222!2sR.%20S%C3%A3o%20Jos%C3%A9%2C%20346%20-%20Centro%2C%20Passo%20do%20Sobrado%20-%20RS%2C%2096685-000!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Localização da Loja Santos"
+                    title="Localização da Loja Santos - R. São José, 346, Centro, Passo do Sobrado - RS"
                   ></iframe>
                 </div>
                 <div className="text-center mt-4">
-                  <p className="text-muted-foreground mb-2">Rua São José, 346</p>
+                  <p className="text-muted-foreground mb-1">R. São José, 346 - Centro</p>
+                  <p className="text-muted-foreground mb-2">Passo do Sobrado - RS, 96685-000</p>
                   <a 
                     href="https://share.google/PjLLlGDAvemn3qzQa" 
                     target="_blank" 
@@ -219,3 +221,4 @@ export const Contact = () => {
     </section>
   );
 };
+```
