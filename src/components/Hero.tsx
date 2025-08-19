@@ -9,7 +9,7 @@ export const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/lovable-uploads/31d130bb-85e7-4b0c-a88d-bd8306fa8651.png')`,
+          backgroundImage: `url('/lovable-uploads/01fb5f38-8192-48fb-b2b5-8d278526ba5c.png')`,
         }}
       >
         {/* Dark overlay para melhorar a legibilidade */}
