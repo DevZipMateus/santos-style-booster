@@ -92,9 +92,27 @@ export const Hero = () => {
                   loop 
                   playsInline
                   className="w-full h-auto max-h-96 object-cover"
+                  onError={(e) => {
+                    console.error('Erro ao carregar vídeo:', e);
+                    console.log('Caminho do vídeo: /lovable-uploads/galeria/Venha conferir a promoção de verão!☀️✨20%.mp4');
+                  }}
+                  onLoadStart={() => {
+                    console.log('Iniciando carregamento do vídeo');
+                  }}
+                  onCanPlay={() => {
+                    console.log('Vídeo carregado com sucesso');
+                  }}
                 >
                   <source src="/lovable-uploads/galeria/Venha conferir a promoção de verão!☀️✨20%.mp4" type="video/mp4" />
-                  Seu navegador não suporta o elemento de vídeo.
+                  
+                  {/* Fallback para quando o vídeo não carrega */}
+                  <div className="w-full h-96 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <ShoppingBag className="w-16 h-16 mx-auto mb-4" />
+                      <h3 className="text-xl font-bold mb-2">Promoção de Verão</h3>
+                      <p className="text-purple-100">Vídeo em carregamento...</p>
+                    </div>
+                  </div>
                 </video>
                 
                 {/* Overlay with gradient */}
