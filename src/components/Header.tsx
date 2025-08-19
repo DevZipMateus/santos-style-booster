@@ -5,15 +5,6 @@ import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -24,11 +15,7 @@ export const Header = () => {
   };
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 w-full z-50 bg-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -44,25 +31,25 @@ export const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("inicio")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection("sobre")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection("produtos")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
             >
               Produtos
             </button>
             <button 
               onClick={() => scrollToSection("contato")}
-              className="text-foreground hover:text-primary transition-colors"
+              className="text-gray-700 hover:text-purple-600 transition-colors"
             >
               Contato
             </button>
@@ -84,7 +71,7 @@ export const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-gray-700"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Abrir menu de navegação"
           >
@@ -94,29 +81,29 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-sm border-t border-border">
+          <div className="md:hidden bg-white border-t border-gray-200">
             <nav className="py-4 space-y-4">
               <button 
                 onClick={() => scrollToSection("inicio")}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
               >
                 Início
               </button>
               <button 
                 onClick={() => scrollToSection("sobre")}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
               >
                 Sobre
               </button>
               <button 
                 onClick={() => scrollToSection("produtos")}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
               >
                 Produtos
               </button>
               <button 
                 onClick={() => scrollToSection("contato")}
-                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
               >
                 Contato
               </button>
