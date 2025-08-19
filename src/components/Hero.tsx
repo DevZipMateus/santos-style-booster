@@ -92,40 +92,31 @@ export const Hero = () => {
                   loop 
                   playsInline
                   className="w-full h-auto max-h-96 object-cover"
-                  onError={(e) => {
-                    console.error('Erro ao carregar vídeo:', e);
-                    console.log('Caminho do vídeo: /lovable-uploads/galeria/Venha conferir a promoção de verão!☀️✨20%.mp4');
-                  }}
-                  onLoadStart={() => {
-                    console.log('Iniciando carregamento do vídeo');
-                  }}
-                  onCanPlay={() => {
-                    console.log('Vídeo carregado com sucesso');
-                  }}
+                  style={{ pointerEvents: 'none' }}
                 >
-                  <source src="/lovable-uploads/galeria/Venha conferir a promoção de verão!☀️✨20%.mp4" type="video/mp4" />
+                  <source src="/lovable-uploads/galeria/video.mp4" type="video/mp4" />
                   
                   {/* Fallback para quando o vídeo não carrega */}
                   <div className="w-full h-96 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                     <div className="text-center text-white">
                       <ShoppingBag className="w-16 h-16 mx-auto mb-4" />
-                      <h3 className="text-xl font-bold mb-2">Promoção de Verão</h3>
-                      <p className="text-purple-100">Vídeo em carregamento...</p>
+                      <h3 className="text-xl font-bold mb-2">Loja Santos</h3>
+                      <p className="text-purple-100">Moda com História</p>
                     </div>
                   </div>
                 </video>
                 
-                {/* Overlay with gradient */}
+                {/* Overlay com gradiente */}
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent pointer-events-none"></div>
                 
-                {/* Video Badge */}
+                {/* Badge do vídeo */}
                 <div className="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
                   <Star className="w-3 h-3 inline mr-1" />
                   Promoção de Verão
                 </div>
               </div>
               
-              {/* Floating Elements */}
+              {/* Elementos flutuantes */}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center shadow-lg">
                 <Heart className="w-8 h-8 text-purple-600" />
               </div>
