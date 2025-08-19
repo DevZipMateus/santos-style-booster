@@ -4,32 +4,43 @@ import { ShoppingBag, Heart, Star } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-white overflow-hidden">
-      {/* Background Decoration */}
-      <div className="absolute inset-0 opacity-10">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('/lovable-uploads/31d130bb-85e7-4b0c-a88d-bd8306fa8651.png')`,
+        }}
+      >
+        {/* Dark overlay para melhorar a legibilidade */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      {/* Background Decoration - mantidos com opacidade reduzida */}
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-10 w-20 h-20 bg-purple-400 rounded-full blur-xl"></div>
         <div className="absolute top-40 right-20 w-32 h-32 bg-purple-300 rounded-full blur-xl"></div>
         <div className="absolute bottom-20 left-1/4 w-24 h-24 bg-purple-500 rounded-full blur-xl"></div>
       </div>
 
-      <div className="container mx-auto px-4 pt-16">
+      <div className="container mx-auto px-4 pt-16 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center space-x-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center space-x-2 bg-purple-100/90 backdrop-blur-sm text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Star className="w-4 h-4" />
               <span>Moda com História</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Loja <span className="text-purple-600">Santos</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              Loja <span className="text-purple-300">Santos</span>
               <br />
-              <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal">
+              <span className="text-2xl md:text-3xl lg:text-4xl text-purple-100 font-normal">
                 Feita com Amor
               </span>
             </h1>
             
-            <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-lg text-white/90 mb-8 max-w-lg mx-auto lg:mx-0 drop-shadow-md">
               Vestimos pessoas com qualidade, estilo e preços justos. Uma jornada que começou pequena, mas cresceu com muito amor e dedicação para cada cliente.
             </p>
             
@@ -37,7 +48,7 @@ export const Hero = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg"
+                className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg shadow-lg"
               >
                 <a 
                   href="https://wa.me/5551996111623" 
@@ -57,7 +68,7 @@ export const Hero = () => {
                   const element = document.getElementById("sobre");
                   element?.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="px-8 py-4 text-lg border-purple-200 text-purple-700 hover:bg-purple-50 hover:border-purple-300"
+                className="px-8 py-4 text-lg bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:border-white/50 shadow-lg"
               >
                 <Heart className="w-5 h-5 mr-2" />
                 Nossa História
@@ -65,18 +76,18 @@ export const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-purple-100">
+            <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">+1000</div>
-                <div className="text-sm text-muted-foreground">Clientes Satisfeitas</div>
+                <div className="text-2xl font-bold text-purple-300 drop-shadow-md">+1000</div>
+                <div className="text-sm text-white/80">Clientes Satisfeitas</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">3</div>
-                <div className="text-sm text-muted-foreground">Categorias</div>
+                <div className="text-2xl font-bold text-purple-300 drop-shadow-md">3</div>
+                <div className="text-sm text-white/80">Categorias</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600">100%</div>
-                <div className="text-sm text-muted-foreground">Qualidade</div>
+                <div className="text-2xl font-bold text-purple-300 drop-shadow-md">100%</div>
+                <div className="text-sm text-white/80">Qualidade</div>
               </div>
             </div>
           </div>
