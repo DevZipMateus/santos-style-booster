@@ -81,17 +81,29 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Visual Element */}
+          {/* Video Element */}
           <div className="relative">
             <div className="relative w-full max-w-md mx-auto">
-              {/* Main Circle */}
-              <div className="w-80 h-80 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-64 h-64 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-center">
-                    <ShoppingBag className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-                    <div className="text-xl font-bold text-purple-600">Moda</div>
-                    <div className="text-purple-500">Feminina • Masculina • Infantil</div>
-                  </div>
+              {/* Video Container */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  className="w-full h-auto max-h-96 object-cover"
+                >
+                  <source src="/lovable-uploads/galeria/Venha conferir a promoção de verão!☀️✨20%.mp4" type="video/mp4" />
+                  Seu navegador não suporta o elemento de vídeo.
+                </video>
+                
+                {/* Overlay with gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/20 to-transparent pointer-events-none"></div>
+                
+                {/* Video Badge */}
+                <div className="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                  <Star className="w-3 h-3 inline mr-1" />
+                  Promoção de Verão
                 </div>
               </div>
               
@@ -101,7 +113,7 @@ export const Hero = () => {
               </div>
               
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center shadow-lg">
-                <Star className="w-6 h-6 text-purple-700" />
+                <ShoppingBag className="w-6 h-6 text-purple-700" />
               </div>
             </div>
           </div>
