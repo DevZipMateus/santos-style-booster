@@ -1,5 +1,4 @@
 
-import { MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export const WhatsAppButton = () => {
@@ -24,10 +23,14 @@ export const WhatsAppButton = () => {
         href="https://wa.me/5551996111623"
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse hover:animate-none"
+        className="group flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-subtle hover:animate-none"
         aria-label="Entrar em contato via WhatsApp"
       >
-        <MessageCircle className="w-7 h-7 text-white group-hover:scale-110 transition-transform duration-300" />
+        <img 
+          src="/lovable-uploads/66931381-e99b-4ae3-8a67-a194be0f555a.png"
+          alt="WhatsApp"
+          className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
+        />
       </a>
       
       {/* Tooltip */}
