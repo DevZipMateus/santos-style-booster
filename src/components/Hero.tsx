@@ -96,7 +96,7 @@ export const Hero = () => {
           <div className="relative">
             <div className="relative w-full max-w-md mx-auto">
               {/* Video Container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 md:mb-0">
                 <video 
                   autoPlay 
                   muted 
