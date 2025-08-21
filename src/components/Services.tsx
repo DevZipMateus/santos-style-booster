@@ -123,7 +123,7 @@ export const Services = () => {
                 const element = document.getElementById("contato");
                 element?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="border-white/30 text-white hover:bg-white/10 hover:border-white"
+              className="border-white/60 text-white bg-white/10 hover:bg-white hover:text-purple-700 hover:border-white transition-all duration-200"
             >
               Visitar Loja Física
             </Button>
