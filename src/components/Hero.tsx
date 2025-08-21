@@ -27,7 +27,7 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center space-x-2 bg-purple-100/90 backdrop-blur-sm text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center space-x-2 bg-purple-100/90 backdrop-blur-sm text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6 mt-8">
               <Star className="w-4 h-4" />
               <span>Moda com História</span>
             </div>
