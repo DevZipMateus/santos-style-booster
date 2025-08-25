@@ -1,3 +1,4 @@
+
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -54,6 +55,14 @@ export function ProductCarousel() {
     {
       image: "/lovable-uploads/f45544aa-1fab-47f4-8dae-e9d8dbf4cdea.png",
       alt: "Conjunto infantil Internacional"
+    },
+    {
+      image: "/lovable-uploads/c216cedf-27dd-4bcc-b29e-5cfb8fc48a44.png",
+      alt: "Conjunto de lingerie vinho elegante"
+    },
+    {
+      image: "/lovable-uploads/9439616b-c3f6-4f86-99fc-62f2d5c4b9c5.png",
+      alt: "Anel dourado texturizado"
     }
   ]
 
