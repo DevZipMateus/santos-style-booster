@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -12,7 +11,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 export function ProductCarousel() {
   const plugin = React.useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: false })
   )
 
   const products = [
@@ -66,8 +65,6 @@ export function ProductCarousel() {
         loop: true,
       }}
       className="w-full max-w-4xl mx-auto"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {products.map((product, index) => (
