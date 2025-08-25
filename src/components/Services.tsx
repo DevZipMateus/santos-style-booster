@@ -2,6 +2,7 @@
 import { Shirt, Baby, Gem, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { ProductCarousel } from "./ProductCarousel";
 
 export const Services = () => {
   const products = [
@@ -52,6 +53,11 @@ export const Services = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Oferecemos uma linha completa de produtos para vestir toda a família com estilo, qualidade e preços justos.
           </p>
+        </div>
+
+        {/* Product Carousel */}
+        <div className="mb-16">
+          <ProductCarousel />
         </div>
 
         {/* Products Grid */}
