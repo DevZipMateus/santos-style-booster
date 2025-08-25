@@ -1,4 +1,3 @@
-
 import { Heart, Users, Award, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -65,10 +64,9 @@ export const About = () => {
               <CardContent className="p-0">
                 <video
                   className="w-full h-auto rounded-lg"
-                  autoPlay
-                  muted
-                  loop
+                  controls
                   playsInline
+                  preload="metadata"
                 >
                   <source src="/lovable-uploads/galeria/santos.mp4" type="video/mp4" />
                   Seu navegador não suporta vídeos HTML5.
