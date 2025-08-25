@@ -1,4 +1,3 @@
-
 import { Heart, Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
 
 export const Footer = () => {
@@ -94,16 +93,26 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contato</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-purple-300" />
-                <a 
-                  href="https://wa.me/5551996111623" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-purple-200 hover:text-white transition-colors"
-                >
-                  (51) 99611-1623
-                </a>
+              <div className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-purple-300 mt-0.5" />
+                <div className="flex flex-col space-y-1">
+                  <a 
+                    href="https://wa.me/5551996111623" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-purple-200 hover:text-white transition-colors"
+                  >
+                    (51) 99611-1623
+                  </a>
+                  <a 
+                    href="https://wa.me/5551989861664" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-purple-200 hover:text-white transition-colors"
+                  >
+                    (51) 98986-1664
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-purple-300" />

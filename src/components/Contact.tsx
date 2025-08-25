@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -34,16 +33,26 @@ export const Contact = () => {
                     <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                       <Phone className="w-6 h-6 text-purple-600" />
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h4 className="font-semibold text-foreground">WhatsApp</h4>
-                      <a 
-                        href="https://wa.me/5551996111623" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-700 transition-colors"
-                      >
-                        (51) 99611-1623
-                      </a>
+                      <div className="flex flex-col space-y-1">
+                        <a 
+                          href="https://wa.me/5551996111623" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-purple-600 hover:text-purple-700 transition-colors"
+                        >
+                          (51) 99611-1623
+                        </a>
+                        <a 
+                          href="https://wa.me/5551989861664" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-purple-600 hover:text-purple-700 transition-colors"
+                        >
+                          (51) 98986-1664
+                        </a>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -115,21 +124,40 @@ export const Contact = () => {
 
             {/* CTA Buttons */}
             <div className="space-y-4 pt-6">
-              <Button 
-                asChild 
-                size="lg" 
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white"
-              >
-                <a 
-                  href="https://wa.me/5551996111623" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Entrar em contato via WhatsApp"
+              <div className="grid grid-cols-1 gap-3">
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="w-full bg-purple-600 hover:bg-purple-700 text-white"
                 >
-                  <Phone className="w-5 h-5 mr-2" />
-                  Falar no WhatsApp
-                </a>
-              </Button>
+                  <a 
+                    href="https://wa.me/5551996111623" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Entrar em contato via WhatsApp (51) 99611-1623"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    WhatsApp (51) 99611-1623
+                  </a>
+                </Button>
+                
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline"
+                  className="w-full border-purple-200 text-purple-700 hover:bg-purple-50"
+                >
+                  <a 
+                    href="https://wa.me/5551989861664" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label="Entrar em contato via WhatsApp (51) 98986-1664"
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    WhatsApp (51) 98986-1664
+                  </a>
+                </Button>
+              </div>
               
               <Button 
                 variant="outline" 
