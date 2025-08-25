@@ -59,39 +59,27 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Visual Element */}
+          {/* Video Element */}
           <div className="relative">
-            <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
-              <CardContent className="p-8">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <MapPin className="w-10 h-10 text-white" />
-                  </div>
-                  <h4 className="text-xl font-bold text-foreground mb-4">Venha nos Visitar</h4>
-                  <p className="text-muted-foreground mb-6">
-                    Estamos localizados no coração da cidade, prontos para atendê-la com carinho e atenção.
-                  </p>
-                  <div className="bg-white rounded-lg p-4 mb-6">
-                    <p className="font-semibold text-foreground">Rua São José, 346</p>
-                    <p className="text-muted-foreground">Venha conhecer nossa loja física</p>
-                  </div>
-                  <a 
-                    href="https://share.google/PjLLlGDAvemn3qzQa" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors"
-                  >
-                    <MapPin className="w-4 h-4 mr-2" />
-                    Ver no Mapa
-                  </a>
-                </div>
+            <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200 overflow-hidden">
+              <CardContent className="p-0">
+                <video
+                  className="w-full h-auto rounded-lg"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/lovable-uploads/galeria/santos.mp4" type="video/mp4" />
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
               </CardContent>
             </Card>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-border">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 border-t border-border mb-16">
           <div className="text-center">
             <div className="text-3xl font-bold text-purple-600 mb-2">2020</div>
             <div className="text-muted-foreground">Ano de Fundação</div>
@@ -107,6 +95,34 @@ export const About = () => {
           <div className="text-center">
             <div className="text-3xl font-bold text-purple-600 mb-2">100%</div>
             <div className="text-muted-foreground">Satisfação</div>
+          </div>
+        </div>
+
+        {/* Visit Us Section */}
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 md:p-12">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MapPin className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Venha nos Visitar</h3>
+              <p className="text-muted-foreground mb-6">
+                Estamos localizados no coração da cidade, prontos para atendê-la com carinho e atenção.
+              </p>
+              <div className="bg-white rounded-lg p-6 mb-6 shadow-sm">
+                <p className="font-semibold text-foreground text-lg">Rua São José, 346</p>
+                <p className="text-muted-foreground">Venha conhecer nossa loja física</p>
+              </div>
+              <a 
+                href="https://share.google/PjLLlGDAvemn3qzQa" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors text-lg"
+              >
+                <MapPin className="w-5 h-5 mr-2" />
+                Ver no Mapa
+              </a>
+            </div>
           </div>
         </div>
       </div>
