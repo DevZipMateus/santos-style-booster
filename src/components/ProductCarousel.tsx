@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import {
@@ -63,6 +62,38 @@ export function ProductCarousel() {
     {
       image: "/lovable-uploads/9439616b-c3f6-4f86-99fc-62f2d5c4b9c5.png",
       alt: "Anel dourado texturizado"
+    },
+    {
+      image: "/lovable-uploads/294573ac-8814-40fd-bfb8-e1cf6e39acf6.png",
+      alt: "Jaqueta vinho acolchoada"
+    },
+    {
+      image: "/lovable-uploads/33c8904d-acf6-4444-b050-528c0c0aebf2.png",
+      alt: "Blusão tricô mostarda"
+    },
+    {
+      image: "/lovable-uploads/49c71130-2ffe-4dd4-afd2-f9b4bbaa387d.png",
+      alt: "Luvas disponíveis em várias cores"
+    },
+    {
+      image: "/lovable-uploads/654d25fa-2dee-4407-8aa2-283e09e08b87.png",
+      alt: "Moletom jeans feminino com gola alta"
+    },
+    {
+      image: "/lovable-uploads/71ae3968-9581-464b-a8c1-c0abc1443eee.png",
+      alt: "Conjunto de lingerie preta com renda"
+    },
+    {
+      image: "/lovable-uploads/d50ac392-9446-4e6d-ae5f-6c7ee40db758.png",
+      alt: "Gorro infantil rosa com ursinho"
+    },
+    {
+      image: "/lovable-uploads/c6529f9b-a8a3-4802-a8e4-c121c8b3c985.png",
+      alt: "Calças femininas em tons neutros"
+    },
+    {
+      image: "/lovable-uploads/aa3eb43c-4af5-4b73-b83f-d441df343293.png",
+      alt: "Moletom infantil Lilo & Stitch"
     }
   ]
 
