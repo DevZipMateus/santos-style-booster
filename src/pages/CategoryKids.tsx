@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CategoryKids = () => {
@@ -18,6 +18,12 @@ const CategoryKids = () => {
     "/lovable-uploads/infantil/IMG-20250819-WA0029(1).jpg",
     "/lovable-uploads/infantil/IMG-20250819-WA0031(1).jpg"
   ];
+
+  const handleQuoteRequest = (productNumber: number) => {
+    const message = `Olá! Gostaria de solicitar um orçamento para Roupas Infantis - Produto ${productNumber}`;
+    const whatsappUrl = `https://wa.me/5551996111623?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -44,12 +50,22 @@ const CategoryKids = () => {
           {images.map((image, index) => (
             <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-purple-100 hover:border-purple-200">
               <CardContent className="p-4">
-                <div className="aspect-square overflow-hidden rounded-lg bg-gray-100">
+                <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 relative">
                   <img 
                     src={image}
                     alt={`Roupa infantil ${index + 1}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  {/* Overlay with Quote Button */}
+                  <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <Button
+                      onClick={() => handleQuoteRequest(index + 1)}
+                      className="bg-white text-purple-700 hover:bg-purple-50 hover:text-purple-800 flex items-center gap-2"
+                    >
+                      <MessageCircle className="w-4 h-4" />
+                      Solicitar Orçamento
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
