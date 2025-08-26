@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,13 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/c21a5667-8200-4e39-9353-93deaadfbafc.png" 
-              alt="Loja Santos - Moda com história, feita com amor"
-              className="h-12 w-auto"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/c21a5667-8200-4e39-9353-93deaadfbafc.png" 
+                alt="Loja Santos - Moda com história, feita com amor"
+                className="h-12 w-auto"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -41,12 +44,12 @@ export const Header = () => {
             >
               Sobre
             </button>
-            <button 
-              onClick={() => scrollToSection("produtos")}
+            <Link 
+              to="/produtos"
               className="text-gray-700 hover:text-purple-600 transition-colors"
             >
               Produtos
-            </button>
+            </Link>
             <button 
               onClick={() => scrollToSection("contato")}
               className="text-gray-700 hover:text-purple-600 transition-colors"
@@ -95,12 +98,13 @@ export const Header = () => {
               >
                 Sobre
               </button>
-              <button 
-                onClick={() => scrollToSection("produtos")}
+              <Link 
+                to="/produtos"
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Produtos
-              </button>
+              </Link>
               <button 
                 onClick={() => scrollToSection("contato")}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"

@@ -51,9 +51,22 @@ export const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Moda Para Toda a Família
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
             Oferecemos uma linha completa de produtos para vestir toda a família com estilo, qualidade e preços justos.
           </p>
+          
+          {/* Botão Ver Todos os Produtos */}
+          <div className="mb-8">
+            <Button 
+              asChild 
+              size="lg" 
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white"
+            >
+              <Link to="/produtos">
+                Ver Todos os Produtos
+              </Link>
+            </Button>
+          </div>
         </div>
 
         {/* Product Carousel */}
@@ -108,16 +121,6 @@ export const Services = () => {
             Entre em contato conosco e descubra nossa coleção completa. Atendimento personalizado para ajudar você a encontrar exatamente o que procura.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-white hover:bg-purple-50 text-purple-700 hover:text-purple-800"
-            >
-              <Link to="/produtos">
-                Ver Todos os Produtos
-              </Link>
-            </Button>
-            
             <Button 
               asChild 
               size="lg" 
