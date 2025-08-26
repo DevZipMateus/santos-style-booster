@@ -9,6 +9,7 @@ const Products = () => {
     {
       name: "Bolsas",
       folder: "bolsas",
+      route: "/produtos/bolsas",
       images: [
         "/lovable-uploads/bolsas/IMG-20250811-WA0021.jpg",
         "/lovable-uploads/bolsas/IMG-20250811-WA0022.jpg",
@@ -19,6 +20,7 @@ const Products = () => {
     {
       name: "Infantil", 
       folder: "infantil",
+      route: "/produtos/infantil",
       images: [
         "/lovable-uploads/infantil/IMG-20250605-WA0025.jpg",
         "/lovable-uploads/infantil/IMG-20250605-WA0028.jpg",
@@ -31,6 +33,7 @@ const Products = () => {
     {
       name: "Semi Joias",
       folder: "joias", 
+      route: "/produtos/joias",
       images: [
         "/lovable-uploads/joias/IMG-20250715-WA0027(1).jpg",
         "/lovable-uploads/joias/IMG-20250715-WA0028(1).jpg",
@@ -43,6 +46,7 @@ const Products = () => {
     {
       name: "Lingerie",
       folder: "lingerie",
+      route: "/produtos/lingerie",
       images: [
         "/lovable-uploads/lingerie/IMG-20250825-WA0115.jpg",
         "/lovable-uploads/lingerie/IMG-20250825-WA0116.jpg",
@@ -54,6 +58,7 @@ const Products = () => {
     {
       name: "Masculino",
       folder: "masculinas",
+      route: "/produtos/masculino",
       images: [
         "/lovable-uploads/masculinas/IMG-20250620-WA0019.jpg",
         "/lovable-uploads/masculinas/IMG-20250620-WA0020.jpg",
@@ -65,6 +70,7 @@ const Products = () => {
     {
       name: "Feminino",
       folder: "roupas femininas",
+      route: "/produtos/feminino",
       images: [
         "/lovable-uploads/roupas femininas/IMG-20250530-WA0054.jpg",
         "/lovable-uploads/roupas femininas/IMG-20250814-WA0034.jpg",
@@ -131,15 +137,13 @@ const Products = () => {
                   className="w-full bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800"
                   asChild
                 >
-                  <a 
-                    href="https://wa.me/5551996111623" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <Link 
+                    to={category.route}
                     className="flex items-center justify-center gap-2"
                   >
                     <ShoppingBag className="w-4 h-4" />
-                    Ver no WhatsApp
-                  </a>
+                    Ver Produtos
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
