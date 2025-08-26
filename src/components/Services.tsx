@@ -3,6 +3,7 @@ import { Shirt, Baby, Gem, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ProductCarousel } from "./ProductCarousel";
+import { Link } from "react-router-dom";
 
 export const Services = () => {
   const products = [
@@ -107,6 +108,16 @@ export const Services = () => {
             Entre em contato conosco e descubra nossa coleção completa. Atendimento personalizado para ajudar você a encontrar exatamente o que procura.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              asChild 
+              size="lg" 
+              className="bg-white hover:bg-purple-50 text-purple-700 hover:text-purple-800"
+            >
+              <Link to="/produtos">
+                Ver Todos os Produtos
+              </Link>
+            </Button>
+            
             <Button 
               asChild 
               size="lg" 
