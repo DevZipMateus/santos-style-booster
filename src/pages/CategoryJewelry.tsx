@@ -11,7 +11,15 @@ const CategoryJewelry = () => {
     "/lovable-uploads/joias/IMG-20250715-WA0029(1).jpg",
     "/lovable-uploads/joias/IMG-20250715-WA0030(1).jpg",
     "/lovable-uploads/joias/IMG-20250715-WA0032(1).jpg",
-    "/lovable-uploads/joias/IMG-20250715-WA0033(1).jpg"
+    "/lovable-uploads/joias/IMG-20250715-WA0033(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0034(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0035(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0036(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0037(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0038(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0039(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0040(1).jpg",
+    "/lovable-uploads/joias/IMG-20250715-WA0042(1).jpg"
   ];
 
   return (

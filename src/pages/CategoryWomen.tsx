@@ -11,7 +11,21 @@ const CategoryWomen = () => {
     "/lovable-uploads/roupas femininas/IMG-20250814-WA0035.jpg",
     "/lovable-uploads/roupas femininas/IMG-20250814-WA0036.jpg",
     "/lovable-uploads/roupas femininas/IMG-20250814-WA0037.jpg",
-    "/lovable-uploads/roupas femininas/IMG-20250814-WA0038.jpg"
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0038.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0039.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0040.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0041.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0042.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0043.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0044.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0045.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0046.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250814-WA0047.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250815-WA0017(2).jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250820-WA0131.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250820-WA0132.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250820-WA0133.jpg",
+    "/lovable-uploads/roupas femininas/IMG-20250820-WA0136.jpg"
   ];
 
   return (

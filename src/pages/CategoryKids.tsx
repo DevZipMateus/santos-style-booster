@@ -11,7 +11,12 @@ const CategoryKids = () => {
     "/lovable-uploads/infantil/IMG-20250605-WA0030.jpg",
     "/lovable-uploads/infantil/IMG-20250605-WA0031.jpg",
     "/lovable-uploads/infantil/IMG-20250819-WA0024(1).jpg",
-    "/lovable-uploads/infantil/IMG-20250819-WA0025(1).jpg"
+    "/lovable-uploads/infantil/IMG-20250819-WA0025(1).jpg",
+    "/lovable-uploads/infantil/IMG-20250819-WA0026(1).jpg",
+    "/lovable-uploads/infantil/IMG-20250819-WA0027(1).jpg",
+    "/lovable-uploads/infantil/IMG-20250819-WA0028(1).jpg",
+    "/lovable-uploads/infantil/IMG-20250819-WA0029(1).jpg",
+    "/lovable-uploads/infantil/IMG-20250819-WA0031(1).jpg"
   ];
 
   return (
