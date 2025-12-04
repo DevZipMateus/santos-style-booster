@@ -1,4 +1,6 @@
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
@@ -8,6 +10,20 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
