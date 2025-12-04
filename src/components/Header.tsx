@@ -55,7 +55,7 @@ export const Header = () => {
               to="/vitrine"
               className="text-gray-700 hover:text-purple-600 transition-colors"
             >
-              Vitrine
+              Produtos
             </Link>
             <button 
               onClick={() => scrollToSection("contato")}
@@ -110,7 +110,7 @@ export const Header = () => {
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-purple-600 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Vitrine
+                Produtos
               </Link>
               <button 
                 onClick={() => scrollToSection("contato")}
